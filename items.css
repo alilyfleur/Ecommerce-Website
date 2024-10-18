@@ -1,0 +1,245 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+	list-style: none;
+	text-decoration: none;
+	scroll-behavior: smooth;
+}
+header{
+	position: fixed;
+	width: 1365px;
+	z-index: 1000;
+	background-color: #433134;
+	box-shadow: 0 1px 6px 0 rgb(32 33 36 / 10%);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 14%;
+	transition: all .50s ease;
+}
+.name{
+	position: relative;
+	width: auto;
+	height: 80px;
+}
+.name h1{
+	font-size: 80px;
+	font-family: 'Montserrat', sans-serif;
+	position: absolute;
+	margin-left: 150px;
+    margin-right: -900px;
+	margin-top: -20px;
+	color: #F8F2F4;
+    width: fit-content;
+}
+.navbar{
+	display: flex;
+	margin-left: 250px;
+    margin-right: -900px;
+	margin-top: 70px;
+	position: absolute;
+	width: auto;
+}
+.navbar li a{
+	color: #F8F2F4;
+	font-size: 15px;
+	font-weight: 500;
+	margin: 20px;
+	transition: all .50s ease;
+}
+.navbar a:hover{
+	color: #cecece;
+}
+.stop{
+	width: 1365px;
+	height: 120px;
+	background-color:#F8F2F4;
+}
+.small-container{
+	width: 1365px;
+	position: relative;
+	background-color: #F8F2F4;
+	height: 700px;
+	display: table;
+	clear: both;
+	content: "";
+}
+.pic{
+	width:4%;
+	position: absolute;
+	margin-left: 1200px;
+	margin-top: -60px;
+	transition: transform 1s;
+}
+.pic:hover{
+	transform: translateY(-5px);
+	cursor: pointer;
+}
+.title{
+		font-weight: 700;
+		font-size: 50px;
+		text-align: center;
+		color: #433134;
+		margin-top: 20px;
+}
+h4{
+	color: #433134;
+	font-weight: normal;
+}
+.col-4 p{
+	font-size: 20px;
+	color: #433134;
+	font-weight:700;
+}
+.col-4:hover{
+	transform: translateY(-5px);
+}
+.col-4{
+	flex-basis:35%;
+	padding: 20px;
+	min-width: 50px;
+	margin-bottom: 10px;
+	float: left;
+	width: 25%;
+	margin-top: 60px;
+	transition: transform 0.5s;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+.col-4 img{
+	width: 100%;
+}
+.checked{
+	color: orange;
+}
+.contacts{
+	width: 1365px;
+	height: 400px;
+	background-color: #433134;
+	position: relative;
+}
+.contacts h1{
+	font-size: 12px;
+	font-family:Arial, Helvetica, sans-serif;
+	margin-top: 80px;
+	margin-left: 100px;
+	color: #F8F2F4;
+	position: absolute;
+	font-weight: 100;
+}
+.contacts h2{
+	font-size: 12px;
+	font-family:Arial, Helvetica, sans-serif;
+	margin-top: 110px;
+	margin-left: 100px;
+	color: #F8F2F4;
+	position: absolute;
+	font-weight: 100;
+}
+.contacts h3{
+	font-size: 12px;
+	font-family:Arial, Helvetica, sans-serif;
+	margin-top: 140px;
+	margin-left: 100px;
+	color: #F8F2F4;
+	position: absolute;
+	font-weight: 100;
+}
+.contacts h4{
+	font-size: 12px;
+	font-family:Arial, Helvetica, sans-serif;
+	margin-top: 170px;
+	margin-left: 100px;
+	color: #F8F2F4;
+	position: absolute;
+	font-weight: 100;
+}
+.faq h1{
+	font-size: 12px;
+	font-family:Arial, Helvetica, sans-serif;
+	margin-top: 80px;
+	margin-left: 600px;
+	color: #F8F2F4;
+	position: absolute;
+	font-weight: 100;
+}
+.faq h2{
+	font-size: 12px;
+	font-family:Arial, Helvetica, sans-serif;
+	margin-top: 110px;
+	margin-left: 600px;
+	color: #F8F2F4;
+	position: absolute;
+	font-weight: 100;
+}
+.faq h3{
+	font-size: 12px;
+	font-family:Arial, Helvetica, sans-serif;
+	margin-top: 140px;
+	margin-left: 600px;
+	color: #F8F2F4;
+	position: absolute;
+	font-weight: 100;
+}
+.faq h4{
+	font-size: 12px;
+	font-family:Arial, Helvetica, sans-serif;
+	margin-top: 170px;
+	margin-left: 600px;
+	color: #F8F2F4;
+	position: absolute;
+	font-weight: 100;
+}
+.all{
+	width: 1365px;
+}
+.all h1{
+	font-size: 16px;
+	font-family:Arial, Helvetica, sans-serif;
+	margin-top: 350px;
+	margin-left: 100px;
+	color: #F8F2F4;
+	position: absolute;
+	font-weight: 100;
+}
+.all a{
+	color: #F8F2F4;
+
+}
+.icons{
+	flex-basis:35%;
+	min-width: 50px;
+	margin-bottom: 10px;
+	float: left;
+	width: 25%;
+	margin-top: 60px;
+	margin-left: 50px;
+	margin-right: 50px;
+	position: relative;
+}
+.icons1 img{
+	width: 13%;
+	position: absolute;
+	margin-left: 900px;
+}
+.icons2 img{
+	width: 15%;
+	position: absolute;
+	margin-left: 960px;
+}
+.icons3 img{
+	width: 13%;
+	position: absolute;
+	margin-left: 1030px;
+}
+.icons1 img:hover{
+	transform: scale(1.1);
+}
+.icons2 img:hover{
+	transform: scale(1.1);
+}
+.icons3 img:hover{
+	transform: scale(1.1);
+}

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	  <link rel="shortcut icon" href="pics/PElogo.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+	<title>Pagsalig Era</title>
+	<style>
+		*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+	list-style: none;
+	text-decoration: none;
+	scroll-behavior: smooth;
+}
+header{
+	position: fixed;
+	width: 1365px;
+	z-index: 1000;
+	background-color: #433134;
+	box-shadow: 0 1px 6px 0 rgb(32 33 36 / 10%);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 14%;
+	transition: all .50s ease;
+}
+.name{
+	position: relative;
+	width: auto;
+	height: 80px;
+}
+.name img{
+	display: block;
+	width: 8%;
+	position: fixed;
+}
+.name h1{
+	font-size: 80px;
+	font-family: 'Montserrat', sans-serif;
+	position: absolute;
+	margin-left: 150px;
+    margin-right: -900px;
+	margin-top: -20px;
+	color: #F8F2F4;
+    width: fit-content;
+}
+.navbar{
+	display: flex;
+	margin-left: 250px;
+    margin-right: -900px;
+	margin-top: 70px;
+	position: absolute;
+}
+.navbar li a{
+	color: #F8F2F4;
+	font-size: 15px;
+	font-weight: 500;
+	margin: 20px;
+	transition: all .50s ease;
+}
+.navbar a:hover{
+	color: #cecece;
+}
+.stop{
+	width: 1365px;
+	height: 150px;
+	background-color:#F8F2F4;
+}
+.details{
+    width: 1365px;
+    height: 600px;
+    background-color: #F8F2F4;
+    position: relative;
+}
+.row{
+	padding: 20px;
+	min-width: 50px;
+	margin-bottom: 10px;
+	float: left;
+	width: 100%;
+	margin-top: 10px;
+    margin-left: 50px;
+	margin-right: 50px;
+}
+.row img{
+    width: 35%;
+    float: left;
+}
+.row h1{
+    display: inline;
+    font-size: 60px;
+    color: #433134;
+    font-weight: 100;
+    margin-left: 50px;
+}
+.row p{
+    color: #433134;
+    font-size: 35px;
+    font-weight:700;
+    display:list-item;
+    position: absolute;
+    margin-left: 515px;
+}
+.row select{
+    display: block;
+    position: absolute;
+    margin-left: 515px;
+    margin-top: 50px;
+    color: #433134;
+    background: #F8F2F4;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    height: 25px;
+    border-style:solid;
+    border-color: #433134;
+}
+.row input {
+    font-family: 'Times New Roman', Times, serif;
+    display: block;
+    border-color: #433134;
+    border-style: solid;
+    position: absolute;
+    color: #433134;
+    background: #F8F2F4;
+    margin-left: 650px;
+    margin-top: 50px;
+    width: 3%;
+    height: 25px;
+}
+.row h2{
+    font-size: 15px;
+    font-weight:700;
+    margin-left: 515px;
+    margin-top: 110px;
+    position: absolute;
+	font-family: 'Montserrat', sans-serif;
+}
+.row h3{
+    font-size: 12px;
+    font-weight:400;
+    margin-left: 515px;
+    margin-right: 50px;
+    margin-top: 130px;
+    position: absolute;
+	font-family: 'Montserrat', sans-serif;
+}
+.b1{
+	font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #433134;
+    background-color:#F8F2F4;
+    display: block;
+    border-style: solid;
+    margin-left: 515px;
+    margin-top: 280px;
+    font-weight: 600;
+    height: 40px;
+}
+.b1:hover{
+    transform:translateY(-0.5s);
+    color: red;
+}
+.b2{
+	font-family: 'Montserrat', sans-serif;  
+    font-size: 15px;
+    color: #433134;
+    background-color:#F8F2F4;
+    display: block;
+    border-style: solid;
+    margin-left: 515px;
+    margin-top: 10px;
+    font-weight: 600;
+    height: 40px;
+}
+.b2:hover:hover{
+    transform:translateY(-0.5s);
+    color: red;
+}
+.contacts{
+	width: auto;
+	height: 400px;
+	background-color: #433134;
+	position: relative;
+}
+.contacts h1{
+	font-size: 12px;
+	font-family:Arial, Helvetica, sans-serif;
+	margin-top: 80px;
+	margin-left: 100px;
+	color: #F8F2F4;
+	position: absolute;
+	font-weight: 100;
+}
+.contacts h2{
+	font-size: 12px;
+	font-family:Arial, Helvetica, sans-serif;
+	margin-top: 110px;
+	margin-left: 100px;
+	color: #F8F2F4;
+	position: absolute;
+	font-weight: 100;
+}
+.contacts h3{
+	font-size: 12px;
+	font-family:Arial, Helvetica, sans-serif;
+	margin-top: 140px;
+	margin-left: 100px;
+	color: #F8F2F4;
+	position: absolute;
+	font-weight: 100;
+}
+.contacts h4{
+	font-size: 12px;
+	font-family:Arial, Helvetica, sans-serif;
+	margin-top: 170px;
+	margin-left: 100px;
+	color: #F8F2F4;
+	position: absolute;
+	font-weight: 100;
+}
+.faq h1{
+	font-size: 12px;
+	font-family:Arial, Helvetica, sans-serif;
+	margin-top: 80px;
+	margin-left: 600px;
+	color: #F8F2F4;
+	position: absolute;
+	font-weight: 100;
+}
+.faq h2{
+	font-size: 12px;
+	font-family:Arial, Helvetica, sans-serif;
+	margin-top: 110px;
+	margin-left: 600px;
+	color: #F8F2F4;
+	position: absolute;
+	font-weight: 100;
+}
+.faq h3{
+	font-size: 12px;
+	font-family:Arial, Helvetica, sans-serif;
+	margin-top: 140px;
+	margin-left: 600px;
+	color: #F8F2F4;
+	position: absolute;
+	font-weight: 100;
+}
+.faq h4{
+	font-size: 12px;
+	font-family:Arial, Helvetica, sans-serif;
+	margin-top: 170px;
+	margin-left: 600px;
+	color: #F8F2F4;
+	position: absolute;
+	font-weight: 100;
+}
+.all h1{
+	font-size: 16px;
+	font-family:Arial, Helvetica, sans-serif;
+	margin-top: 350px;
+	margin-left: 100px;
+	color: #F8F2F4;
+	position: absolute;
+	font-weight: 100;
+}
+.all a{
+	color: #F8F2F4;
+
+}
+.icons{
+	flex-basis:35%;
+	min-width: 50px;
+	margin-bottom: 10px;
+	float: left;
+	width: 25%;
+	margin-top: 60px;
+	margin-left: 50px;
+	margin-right: 50px;
+	position: relative;
+}
+.icons1 img{
+	width: 13%;
+	position: absolute;
+	margin-left: 900px;
+}
+.icons2 img{
+	width: 15%;
+	position: absolute;
+	margin-left: 960px;
+}
+.icons3 img{
+	width: 13%;
+	position: absolute;
+	margin-left: 1030px;
+}
+.icons1 img:hover{
+	transform: scale(1.1);
+}
+.icons2 img:hover{
+	transform: scale(1.1);
+}
+.icons3 img:hover{
+	transform: scale(1.1);
+}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="name">
+			<h1>PAGSALIG ERA</h1>
+			<ul class="navbar">
+				<li><a href="shop.html">Home</a></li>
+				<li><a href="items.html">Shop</a></li>
+				<li><a href="voucher.html">Vouchers</a></li>
+				<li><a href="arrival.html">New Arrivals</a></li>
+			</ul>
+		</div>
+	</header>
+	<section>
+		<div class="stop"></div>
+	</section>
+    <section>
+        <div class="details">
+            <div class="row">
+                <h1>Terno for Women</h1>
+                <img src="imgdetails/p5.jpg" alt="">
+                <p>₱300</p>
+                <select>
+                    <option>Select Size</option>
+                    <option>XS</option>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                    <option>XL</option>
+                    <option>XXS</option>
+                </select>
+                <h2>Product Details</h2>
+                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium quos autem quae similique. Ducimus excepturi illo beatae provident quos qui officia, minima obcaecati sunt maxime aliquid totam, et fuga aut eum nemo accusamus minus blanditiis nulla, eligendi inventore praesentium nobis. Laborum molestiae ipsa eum illum ex eaque hic in quaerat incidunt accusantium, recusandae sunt cumque quia soluta voluptatibus id nobis officiis quam. Illum consectetur eligendi, dolore accusantium delectus neque fuga blanditiis laborum dolorum est dignissimos, veritatis deleniti numquam distinctio? Deleniti, doloribus. Sint deserunt, placeat, illum impedit labore nobis enim amet, molestias ex sequi tempore voluptatibus earum doloremque accusantium ab explicabo possimus adipisci. Ducimus, in vitae, hic dolores delectus odio quidem optio ullam placeat numquam nam voluptate ex quae maxime. Suscipit.</h3>
+                <input type="number" value="1">
+                <button class="b1">Add to Cart</button>
+                <button class="b2">Place Order</button>
+                </div>
+            </div>
+        </div>
+    </section>
+	<section>
+		<div class="contacts">
+			<h1>About Us</h1>
+			<h2>Contact Us</h2>
+			<h3>Returns & Exchanges Policy</h3>
+			<h4>Shipping & Custom Information</h4>
+            
+			<div class="faq">
+				<h1>Terms of Service</h1>
+				<h2>Refund Policy</h2>
+				<h3>FAQ</h3>
+				<h4>Customer Reviews</h4>
+			</div>
+			<div class="icons">
+				<div class="icons1">
+					<img src="icons/fb.png" alt="">
+				</div>
+				<div class="icons2">
+					<img src="icons/ig.png" alt="">
+				</div>
+				<div class="icons3">
+					<img src="icons/email.png" alt="">
+				</div>
+			</div>
+			<div class="all">
+				<h1>@PagsaligEra | All Rights reserved | <a href="#">Terms and Conditions</a><a href="#">  Cookie Policy</a>
+				<a href="#">  Terms of use</a></h1>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
